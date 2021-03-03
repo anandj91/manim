@@ -191,6 +191,7 @@ class NumberLine(Line):
         number_config = merge_dicts_recursively(
             self.decimal_number_config,
             number_config or {},
+            {"color": self.color},
         )
         if scale_val is None:
             scale_val = self.number_scale_val
